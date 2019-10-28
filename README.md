@@ -1,4 +1,4 @@
-# Publicworx
+# PUBLIC WORX
 
 Uses React.js and Node.js, sets up a simple API and deploys with Heroku.
 Based on this example: https://www.youtube.com/watch?v=eHWK4Pu6dmE
