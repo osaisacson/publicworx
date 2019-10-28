@@ -1,5 +1,5 @@
 {
-  "name": "green-gargoyle",
+  "name": "publicworx",
   "version": "1.0.0",
   "engines": {
     "node": "10.16.3"
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osaisacson/green-gargoyle.git"
+    "url": "git+https://github.com/osaisacson/publicworx.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/osaisacson/green-gargoyle/issues"
+    "url": "https://github.com/osaisacson/publicworx/issues"
   },
-  "homepage": "https://github.com/osaisacson/green-gargoyle#readme",
+  "homepage": "https://github.com/osaisacson/publicworx#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
