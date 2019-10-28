@@ -16,10 +16,11 @@ Imports
 /* ================================
 Colors
 ================================= */
-$main-theme-color: #043c2f;
+$main-theme-color: #000;
 $main-theme-text-color: #fff;
-$secondary-theme-color: #90ee90;
+$secondary-theme-color: #666;
 $info-background-color: #7b7b7b;
+$gradient-color: linear-gradient(-90deg, #C94527, #e78924);
 
 
 
@@ -65,8 +66,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #3a3a3a;
-  font-weight: 700;
+  color: #000;
+  font-weight: 400;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -182,7 +183,6 @@ margin, padding
 /* ================================
 Helpers
 ================================= */
-
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -205,6 +205,10 @@ Helpers
 
 .bold {
   font-weight: 600;
+}
+
+.thin {
+  font-weight: 200;
 }
 
 .no-margin {
@@ -289,6 +293,7 @@ nav.navbar.fixed-to-top {
 }
 
 .navbar-default {
+  background: $gradient-color;
   border: none;
   border-bottom: none;
   opacity: 1;
@@ -297,14 +302,14 @@ nav.navbar.fixed-to-top {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
-  font-weight: 700;
+  color: #000;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: $secondary-theme-color;
+  color: #666;
   cursor: pointer;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -317,20 +322,8 @@ nav.navbar.fixed-to-top {
 /* brand / logo */
 .navbar-default .navbar-brand {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.6em;
-  color: $secondary-theme-color;
-  display: flex; 
-}
-
-.navbar-default .navbar-brand:hover {
-  color: $secondary-theme-color;
-}
-
-.hover-logo {
-  width: 14px;
-  margin-right: 5px;
-  content: url("../img/mano_verde_g.png");
+  font-weight: 100;
+  font-size: 2.3em;
 }
 
 
@@ -500,19 +493,19 @@ Intro
     text-align: center;
   }
 
-  h2 {
+  h1 {
     color: #fff;
-    margin-bottom: 30px;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 4em;
+  }
+
+  h5 {
+    color: #fff;
   }
 
   p {
-    width: 70%;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
-    margin: 0 auto 30px auto;
-    color: #fff;
+    margin: auto;
   }
 }
 
@@ -577,24 +570,23 @@ Intro
 
 #intro .btn-get-started {
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
+  line-height: 1;
   display: inline-block;
   padding: 12px 32px;
+  background: $gradient-color;
   border-radius: 3px;
   transition: 0.5s;
-  line-height: 1;
   margin: 10px;
-  color: #fff;
+  color: #000;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid $secondary-theme-color;
 }
 
 #intro .btn-get-started:hover {
-  background: $secondary-theme-color;
-  color: #fff;
+  color: #666;
   text-decoration: none;
 }
 
@@ -864,14 +856,6 @@ Buttons
 
 .contact-widget i {
   color: $main-theme-color;
-}
-
-/* ================================
-Navbar
-================================= */
-
-.navbar-default {
-  background: $main-theme-color;
 }
 
 /* ================================

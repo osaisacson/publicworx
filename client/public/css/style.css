@@ -60,8 +60,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #3a3a3a;
-  font-weight: 700;
+  color: #000;
+  font-weight: 400;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -124,12 +124,12 @@ button.navbar-toggle {
 }
 .filter-button.active {
   color: #fff;
-  background-color: #90ee90;
+  background-color: #666;
 }
 
 .filter-button:hover,
 .filter-button:active {
-  background-color: #90ee90;
+  background-color: #666;
   text-decoration: none;
 }
 
@@ -203,6 +203,10 @@ Helpers
   font-weight: 600;
 }
 
+.thin {
+  font-weight: 200;
+}
+
 .no-margin {
   margin: 0;
 }
@@ -217,7 +221,7 @@ Counter
 .counter {
   min-width: 250px;
   width: fit-content;
-  background-color: #043c2f;
+  background-color: #000;
   padding: 20px 25px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -281,6 +285,7 @@ nav.navbar.fixed-to-top {
 }
 
 .navbar-default {
+  background: linear-gradient(-90deg, #C94527, #e78924);
   border: none;
   border-bottom: none;
   opacity: 1;
@@ -289,14 +294,14 @@ nav.navbar.fixed-to-top {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
-  font-weight: 700;
+  color: #000;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #90ee90;
+  color: #666;
   cursor: pointer;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -309,20 +314,8 @@ nav.navbar.fixed-to-top {
 /* brand / logo */
 .navbar-default .navbar-brand {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.6em;
-  color: #90ee90;
-  display: flex;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: #90ee90;
-}
-
-.hover-logo {
-  width: 14px;
-  margin-right: 5px;
-  content: url("../img/mano_verde_g.png");
+  font-weight: 100;
+  font-size: 2.3em;
 }
 
 /* ================================
@@ -339,7 +332,7 @@ Home sections
 }
 
 .section-heading h2 {
-  color: #043c2f;
+  color: #000;
   font-size: 38px;
   text-transform: uppercase;
 }
@@ -485,18 +478,17 @@ Intro
 #intro .carousel-content {
   text-align: center;
 }
-#intro h2 {
+#intro h1 {
   color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 4em;
+}
+#intro h5 {
+  color: #fff;
 }
 #intro p {
-  width: 70%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -559,24 +551,23 @@ Intro
 
 #intro .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
+  line-height: 1;
   display: inline-block;
   padding: 12px 32px;
+  background: linear-gradient(-90deg, #C94527, #e78924);
   border-radius: 3px;
   transition: 0.5s;
-  line-height: 1;
   margin: 10px;
-  color: #fff;
+  color: #000;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #90ee90;
 }
 
 #intro .btn-get-started:hover {
-  background: #90ee90;
-  color: #fff;
+  color: #666;
   text-decoration: none;
 }
 
@@ -793,7 +784,7 @@ ul.social-network li a i {
 Footer
 ================================= */
 footer {
-  background: #043c2f;
+  background: #000;
   color: #fff;
   padding: 50px 0 30px;
 }
@@ -809,14 +800,14 @@ footer a:hover {
 
 a,
 a:hover {
-  color: #043c2f;
+  color: #000;
 }
 
 /* ================================
 Buttons
 ================================= */
 .back-to-top {
-  background: #043c2f;
+  background: #000;
   color: #fff;
 }
 
@@ -831,7 +822,7 @@ Buttons
 }
 
 .btn-theme {
-  background: #043c2f;
+  background: #000;
 }
 
 .service .carousel-indicators .active {
@@ -839,14 +830,7 @@ Buttons
 }
 
 .contact-widget i {
-  color: #043c2f;
-}
-
-/* ================================
-Navbar
-================================= */
-.navbar-default {
-  background: #043c2f;
+  color: #000;
 }
 
 /* ================================
@@ -854,8 +838,8 @@ Form
 ================================= */
 .form-control:focus {
   border-color: #666;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px #043c2f;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px #043c2f;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px #000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px #000;
 }
 
 /* ================================
