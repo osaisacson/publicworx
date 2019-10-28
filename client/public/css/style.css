@@ -902,6 +902,10 @@ Testimonials
 more media queries
 ================================= */
 @media (max-width: 768px) {
+  .testimonials .carousel .media a {
+    display: none;
+  }
+
   header {
     padding-bottom: 50px;
     min-height: 1000px;
