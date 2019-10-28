@@ -211,12 +211,20 @@ Helpers
   font-weight: 200;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .no-margin {
   margin: 0;
 }
 
 .no-padding {
   padding: 0;
+}
+
+.full-width {
+  width: 100%;
 }
 
 /* ================================
@@ -250,25 +258,6 @@ Counter
   text-align: center;
 }
 
-/* ================================
-Team image gallery
-================================= */
-
-.gallery-img {
-  width: 150px;
-  height: 110px;
-  object-fit: cover;
-  margin: 10px;
-}
-
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-    margin: 10px;
-    border-radius: 4px;
-  }
-}
 
 /* ================================
 Navbar
@@ -412,7 +401,14 @@ Parallax
 }
 
 .parallax {
-  height: 100vh;
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -865,6 +861,92 @@ Form
   border-color: #666;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px $main-theme-color;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px $main-theme-color;
+}
+
+/* ================================
+Testimonials
+================================= */
+
+.testimonials {
+  h2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 70px;
+  }
+  h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    border-radius: 1px;
+    background: #1c47e3;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+  }
+  .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+  }
+  .carousel .item {
+    color: #999;
+    overflow: hidden;
+      min-height: 120px;
+    font-size: 13px;
+  }
+
+  .carousel .media a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .carousel .media img {
+    max-width: 100%;
+  }
+  .carousel .testimonial {
+    padding: 0 15px 0 60px ;
+    position: relative;
+  }
+  .carousel .testimonial::before {
+    content: '\93';
+    color: #e2e2e2;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 54px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+  }
+  .carousel .overview b {
+    text-transform: uppercase;
+    color: #1c47e3;
+  }
+  .carousel .carousel-indicators {
+    bottom: -40px;
+  }
+  .carousel-indicators li, .carousel-indicators li.active {
+    width: 18px;
+      height: 18px;
+    border-radius: 50%;
+    margin: 1px 3px;
+  }
+  .carousel-indicators li {	
+      background: #e2e2e2;
+      border: 4px solid #fff;
+  }
+  .carousel-indicators li.active {
+    color: #fff;
+      background: #1c47e3;    
+      border: 5px double;    
+  }
 }
 
 /* ================================
