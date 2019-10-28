@@ -351,6 +351,10 @@ Home sections
   background: #575757;
 }
 
+.bg-black {
+  background: #000;
+}
+
 /* --- section content general color --- */
 .color-light h1,
 .color-light h2,
@@ -368,27 +372,6 @@ Home sections
 /* ==========================
 Parallax
 ============================= */
-#parallax1 {
-  background-image: url(https://images.unsplash.com/photo-1510391947036-00d38cc22ad8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1988&q=80);
-}
-
-#parallax2 {
-  background-image: url(../img/parallax/2.jpg);
-}
-
-.parallax-overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30%;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100vh;
-}
-.parallax-overlay.small-padding {
-  padding: 10px 5%;
-}
-
 .parallax {
   /* The image used */
   background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
@@ -401,31 +384,27 @@ Parallax
   background-size: cover;
 }
 
+#customer-logos {
+  background-image: url(../img/logos-static.png);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-section {
+  background-image: url(../img/services-static.png);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
-  .parallax-overlay {
-    padding: 0 10%;
+  #customer-logos, #service-section {
+    height: 100px;
   }
 }
-#active-gardens {
-  background-image: url(https://images.unsplash.com/photo-1523301551780-cd17359a95d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
-}
-
-#analysis {
-  background-image: url(https://images.unsplash.com/photo-1509910387569-734a87698588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80);
-}
-
-#setup {
-  background-image: url(https://images.unsplash.com/photo-1417036631532-ae3fc6ce32f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-}
-
-#insurance {
-  background-image: url(https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
-}
-
-#community {
-  background-image: url(https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-}
-
 /* ================================
 Intro
 ================================= */
@@ -857,7 +836,7 @@ Testimonials
   margin: 0 auto;
   height: 4px;
   border-radius: 1px;
-  background: #1c47e3;
+  background: #C94527;
   left: 0;
   right: 0;
   bottom: -20px;
@@ -898,7 +877,7 @@ Testimonials
 }
 .testimonials .carousel .overview b {
   text-transform: uppercase;
-  color: #1c47e3;
+  color: #C94527;
 }
 .testimonials .carousel .carousel-indicators {
   bottom: -40px;
@@ -915,7 +894,7 @@ Testimonials
 }
 .testimonials .carousel-indicators li.active {
   color: #fff;
-  background: #1c47e3;
+  background: #C94527;
   border: 5px double;
 }
 

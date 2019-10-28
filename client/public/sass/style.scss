@@ -20,7 +20,10 @@ $main-theme-color: #000;
 $main-theme-text-color: #fff;
 $secondary-theme-color: #666;
 $info-background-color: #7b7b7b;
-$gradient-color: linear-gradient(-90deg, #C94527, #e78924);
+$theme-dark-color: #C94527;
+$theme-light-color: #e78924;
+
+$gradient-color: linear-gradient(-90deg, $theme-dark-color, $theme-light-color);
 
 
 
@@ -360,6 +363,10 @@ Home sections
   background: #575757;
 }
 
+.bg-black {
+  background: #000;
+}
+
 /* --- section content general color --- */
 
 .color-light h1,
@@ -378,28 +385,6 @@ Home sections
 /* ==========================
 Parallax
 ============================= */
-
-#parallax1 {
-  background-image: url(https://images.unsplash.com/photo-1510391947036-00d38cc22ad8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1988&q=80);
-}
-#parallax2 {
-  background-image: url(../img/parallax/2.jpg);
-}
-
-.parallax-overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30%;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100vh;
-
-  &.small-padding {
-    padding: 10px 5%;
-  }
-}
-
 .parallax {
   /* The image used */
   background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
@@ -414,26 +399,27 @@ Parallax
   background-size: cover;
 }
 
-@media (max-width: 768px) {
-  .parallax-overlay {
-    padding: 0 10%;
-  }
+#customer-logos {
+  background-image: url(../img/logos-static.png);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#active-gardens {
-  background-image: url(https://images.unsplash.com/photo-1523301551780-cd17359a95d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+#service-section {
+  background-image: url(../img/services-static.png);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#analysis {
-  background-image: url(https://images.unsplash.com/photo-1509910387569-734a87698588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80);
-}
-#setup {
-  background-image: url(https://images.unsplash.com/photo-1417036631532-ae3fc6ce32f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-}
-#insurance {
-  background-image: url(https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
-}
-#community {
-  background-image: url(https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+
+
+@media (max-width: 768px) {
+  #customer-logos, #service-section {
+    height: 100px;
+  }
 }
 
 /* ================================
@@ -884,7 +870,7 @@ Testimonials
     margin: 0 auto;
     height: 4px;
     border-radius: 1px;
-    background: #1c47e3;
+    background: $theme-dark-color;
     left: 0;
     right: 0;
     bottom: -20px;
@@ -927,7 +913,7 @@ Testimonials
   }
   .carousel .overview b {
     text-transform: uppercase;
-    color: #1c47e3;
+    color: $theme-dark-color;
   }
   .carousel .carousel-indicators {
     bottom: -40px;
@@ -944,7 +930,7 @@ Testimonials
   }
   .carousel-indicators li.active {
     color: #fff;
-      background: #1c47e3;    
+      background: $theme-dark-color;   
       border: 5px double;    
   }
 }
