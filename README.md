@@ -22,7 +22,7 @@ git --version
 Node.js
 
 ```
-install heroku from ‘masOS installer’ here: (https://nodejs.org/en/download/)
+install from ‘masOS installer’ here: (https://nodejs.org/en/download/)
 ```
 
 Heroku - for easy deployment
@@ -67,10 +67,11 @@ Your app’s code is now tracked in a local git repository. It has not yet been 
 
 ```
 npm install (from root)
+cd .. (to move into client folder)
 npm install (from client)
 ```
 
-4. Create Heroku instance
+4. Create Heroku instance.
    From root:
 
 ```
@@ -92,7 +93,7 @@ heroku buildpacks:clear
 
 ...otherwise the first time you push to heroku you will get an error of 'App not compatible with buildpack'. Clearing it like this fixes that.
 
-7. Save and push changes
+7. Save and push changes.
    Make changes, then:
 
 ```
